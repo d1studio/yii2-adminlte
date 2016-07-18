@@ -14,5 +14,10 @@
     "rmrevin/yii2-fontawesome": "~2.9"
   },
   "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "d1studio\\yii2-adminlte\\": ""
+    }
   }
 }
