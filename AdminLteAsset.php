@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace d1studio\yii2_adminlet;
+namespace d1studio\yii2_adminlte;
 
 use yii\web\AssetBundle;
 use yii\web\View;
