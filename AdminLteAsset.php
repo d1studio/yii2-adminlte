@@ -21,8 +21,6 @@ class AdminLteAsset extends AssetBundle
      * @inherit
      */
     public $sourcePath = '@vendor/d1studio/yii2-adminlte/assets';
-    public $basePath   = '@webroot';
-    public $baseUrl    = '@web';
     public $css = [
         'dist/css/AdminLTE.min.css',
     ];
