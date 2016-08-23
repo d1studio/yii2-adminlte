@@ -28,7 +28,7 @@ AppAsset::register($this);
     <?php
         echo $this->render('header.php');
         echo $this->render('aside.php');
-        echo $this->render('content.php');
+        echo $this->render('content.php',['content'=>$content]);
         echo $this->render('footer.php');
     ?>
 
