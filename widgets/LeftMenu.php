@@ -51,7 +51,7 @@ class LeftMenu extends Widget{
     public function run(){
         foreach ($this->menu as $item){
             if(isset($item['children']) && $item['children']){
-                if($item['active']){
+                if(isset($item['active']) && $item['active']){
                     echo '<li class="active treeview">';
                 }else{
                     echo '<li class="treeview">';

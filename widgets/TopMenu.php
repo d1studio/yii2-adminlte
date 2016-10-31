@@ -13,7 +13,8 @@ use \yii;
 class TopMenu extends Widget
 {
     public $more_module_list = [];
-    public $module_list =[];
+    public $module_list      = [];
+    public $module_id        = '';
     /**
      * Renders the widget.
      */
@@ -23,7 +24,7 @@ class TopMenu extends Widget
         $more_module_list = $this->more_module_list;
         echo '<ul class="nav navbar-nav">';
         foreach ($module_list as $module) {
-            if (Yii::$app->controller->module->id == $module['module']) {
+            if ($this->module_id == $module['module']) {
                 $open = 'open';
             } else {
                 $open = '';
@@ -42,7 +43,7 @@ class TopMenu extends Widget
 EOT;
             foreach($more_module_list as $v){
                 echo "<li><a href='".$v['url']."'>".$v['name']."</a></li>";
-    //            echo '<li role="separator" class="divider"></li>';
+                //            echo '<li role="separator" class="divider"></li>';
             }
             print <<< EOT
               </ul>
